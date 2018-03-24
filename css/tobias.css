@@ -1,6 +1,8 @@
 html, body {
 	font-family: times; 
 	margin: 0; 
+	margin-top: 50px; 
+	
 }
 
 header{
@@ -8,7 +10,49 @@ header{
 	padding: 40px 20px;
 	text-align: center;
 }
-
+.navbar{
+	overflow: hidden;
+	size: 20px;
+	position: fixed;
+	top: 0;
+	width: 100%; /*means it will be full width*/
+	height: 50px; 
+	background: transparent;
+}
+.navbar ul{
+	list-style: none;
+	width: 800px; 
+	margin: 0 auto;
+	padding: 0; 
+}
+.navbar li{
+	float: left;
+	padding: 1px;
+}
+.navbar li a{
+	display: block;
+	float: left;
+	margin: 0 5px; 
+	color: #000000; 
+	display: block;
+	text-align: center;
+	padding: 14px 16px; 
+	text-decoration: none;
+	font-weight: bold;
+	
+	border: 1px solid #ccc;
+}
+.navbar li a:hover{
+	color: #c00; 
+	background: black; 
+}
+.navbar li a.active{
+	color: black
+	background-color: white;
+}
+	color: black; 
+	background-color: white; 
+}
 h1 {
 	font-size: 90px;
 	color: white; 
@@ -60,4 +104,5 @@ footer ul{
 footer ul li{
 	display: inline-block;
 	margin: 0 5px; 
+
 }
