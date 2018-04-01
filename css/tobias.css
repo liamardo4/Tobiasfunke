@@ -1,23 +1,12 @@
-html, body {
-	font-family: times; 
-	margin: 0; 
-	margin-top: 50px; 
-	
-}
-
-header{
-	background-color: #4f2a28;
-	padding: 40px 20px;
-	text-align: center;
-}
+/* navigation bar */
 .navbar{
 	overflow: hidden;
-	size: 20px;
-	position: fixed;
+	size: 20px;  
+	position: absolute;
 	top: 0;
 	width: 100%; /*means it will be full width*/
 	height: 50px; 
-	background: transparent;
+	background: white; 
 }
 .navbar ul{
 	list-style: none;
@@ -38,20 +27,32 @@ header{
 	text-align: center;
 	padding: 14px 16px; 
 	text-decoration: none;
-	font-weight: bold;
-	
-	border: 1px solid #ccc;
+	font-weight: bold;	
 }
 .navbar li a:hover{
-	color: #c00; 
-	background: black; 
+	color: white; 
+	background: #4f2a28; 
 }
 .navbar li a.active{
-	color: black
-	background-color: white;
+	color: white;
+	background-color: #green;
 }
-	color: black; 
-	background-color: white; 
+
+
+html, body {
+	font-family: times; 
+	margin: 0; 
+	margin-top: 20px; 	
+}
+header{
+	background-color: #4f2a28;
+	padding: 40px 20px;
+	text-align: center;
+}
+header img{
+	border-radius: 10px;
+    width: 500px;
+    border: 2px solid #ff948a;
 }
 h1 {
 	font-size: 90px;
@@ -61,20 +62,10 @@ h4{
 	font-style: italic;
 	color: white; 
 }
-
-header img{
-	border-radius: 10px;
-    width: 500px;
-    border: 2px solid #ff948a;
-}
-
 .content{
 	max-width: 900px; 
 	margin: 0 auto; 
 	padding: 0 20px; 
-}
-img.big-image{
-	max-width: 100%;
 }
 p.caption{
 	font-size: 16px;
@@ -97,6 +88,8 @@ footer{
 	margin-top: 20px; 
 	padding: 40px 20px; 
 	background-color: lightgrey; 
+	display: inline-block;
+	width: 100%
 }
 footer ul{
 	text-align: center;
@@ -104,5 +97,27 @@ footer ul{
 footer ul li{
 	display: inline-block;
 	margin: 0 5px; 
+}
 
+
+/*specifc css for "Home" page */
+img.big-image{
+	max-width: 100%;
+}
+
+
+/*specifc css for "Book" page */
+img.book-cover{
+	height: 400px;
+	width: auto; 
+}
+img.book{
+	float: left;
+	padding: 20px;
+}
+
+/*specifc css for "Contact" page */
+img.contact-image{
+	float: right;
+	
 }
