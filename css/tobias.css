@@ -7,12 +7,14 @@
 	width: 100%; /*means it will be full width*/
 	height: 50px; 
 	background: white; 
+
 }
 .navbar ul{
 	list-style: none;
 	width: 800px; 
 	margin: 0 auto;
 	padding: 0; 
+	float: left;
 }
 .navbar li{
 	float: left;
@@ -119,5 +121,5 @@ img.book{
 /*specifc css for "Contact" page */
 img.contact-image{
 	float: right;
-	
+
 }
