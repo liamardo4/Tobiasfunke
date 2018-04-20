@@ -6,7 +6,7 @@
 	top: 0;
 	width: 100%; /*means it will be full width*/
 	height: 50px; 
-	background: white; 
+	background: #A18273; 
 
 }
 .navbar ul{
@@ -24,45 +24,48 @@
 	display: block;
 	float: left;
 	margin: 0 5px; 
-	color: #000000; 
+	color: #4B3E3F; 
 	display: block;
 	text-align: center;
 	padding: 14px 16px; 
 	text-decoration: none;
 	font-weight: bold;	
 }
-.navbar li a:hover{
-	color: white; 
-	background: #4f2a28; 
-}
+
 .navbar li a.active{
-	color: white;
+	color: #E5B7AA;
 	background-color: #green;
 }
-
+.navbar li a:hover{
+	color: white; 
+	background: #4B3E3F; 
+}
 
 html, body {
 	font-family: times; 
 	margin: 0; 
 	margin-top: 20px; 	
+	background-color: #DBB4A7;
 }
 header{
-	background-color: #4f2a28;
+	background-color: #81523E;
 	padding: 40px 20px;
 	text-align: center;
+
 }
 header img{
 	border-radius: 10px;
     width: 500px;
     border: 2px solid #ff948a;
+
 }
 h1 {
-	font-size: 90px;
-	color: white; 
+	font-size: 70px;
+	color: #E5B7AA; 
 }
 h4{
 	font-style: italic;
-	color: white; 
+	color: #E5B7AA; 
 }
 .content{
 	max-width: 900px; 
@@ -84,13 +87,15 @@ ul{
 }
 a{
 	text-decoration: none; 
-	color: green; 
+	color: yellow; 
 }
 footer{
 	margin-top: 20px; 
 	padding: 40px 20px; 
-	background-color: lightgrey; 
+	background-color: #4B3E3F; 
 	display: inline-block;
+	bottom: 0px;
+	height: 4em; 
 	width: 100%
 }
 footer ul{
@@ -116,10 +121,28 @@ img.book-cover{
 img.book{
 	float: left;
 	padding: 20px;
+	width: 400px;
+}
+#quotes{
+	line-height: 2em;
 }
 
 /*specifc css for "Contact" page */
 img.contact-image{
-	float: right;
+	width: 50%
+	position: relative;
 
+}
+#contact-title-page{
+	color: #E5B7AA;
+	font-size: 30pt;
+}
+
+/*specifc css for "Events" page */
+.event{
+	text-decoration: underline;
+}
+
+img.event-image{
+	width: 500px;
 }
